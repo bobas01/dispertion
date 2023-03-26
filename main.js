@@ -1,7 +1,7 @@
 const btn = document.getElementById('btn');
 const arrayEmoji = ["🍇", "🍈", "🍉", "🍊", "🍋","🍄"];
 let slots = document.getElementById('slots');
-
+ 
 btn.addEventListener('click', function () {
   for (let i = 0; i < 250; i++) {
     let newDiv = document.createElement('div');
@@ -16,7 +16,7 @@ btn.addEventListener('click', function () {
     newDiv.addEventListener("animationend", function () {
       slots.removeChild(newDiv);
     });
-  }
+  } 
 });
 
 const radialKeyframes = `
